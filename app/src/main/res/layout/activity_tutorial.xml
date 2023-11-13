@@ -22,12 +22,23 @@
         android:textSize="48sp"
         android:gravity="center"></TextView>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        >
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video"/>
+    </FrameLayout>
+
     <ImageView
         android:id="@+id/estacio"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/estacio_1"></ImageView>
 
 </LinearLayout>

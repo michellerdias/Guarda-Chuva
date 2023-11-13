@@ -6,6 +6,7 @@
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
     android:layout_marginTop="10sp"
+    android:layout_marginBottom="10sp"
     app:cardElevation="7dp"
     app:cardCornerRadius="10dp"
     android:backgroundTint="@color/cinza">
@@ -16,14 +17,34 @@
         android:layout_margin="10sp">
 
         <TextView
+            android:id="@+id/tituloNomeProprietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
             android:id="@+id/nomeProprietario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Proprietário"
             android:textColor="@color/black"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"/>
+            android:layout_toRightOf="@id/tituloNomeProprietario"/>
+
+        <TextView
+            android:id="@+id/tituloCpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPF: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/nomeProprietario"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/cpf"
@@ -31,7 +52,20 @@
             android:layout_height="wrap_content"
             android:text="CPF"
             android:textColor="@color/black"
-            android:layout_below="@id/nomeProprietario" />
+            android:layout_below="@id/nomeProprietario"
+            android:layout_toRightOf="@id/tituloCpf"
+            />
+
+        <TextView
+            android:id="@+id/tituloRua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rua: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloCpf"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/rua"
@@ -39,14 +73,38 @@
             android:layout_height="wrap_content"
             android:text="Rua"
             android:textColor="@color/black"
-            android:layout_below="@id/cpf"/>
+            android:layout_below="@id/cpf"
+            android:layout_toRightOf="@id/tituloRua"/>
+
+        <TextView
+            android:id="@+id/tituloNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloRua"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
+
         <TextView
             android:id="@+id/numero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Número"
             android:textColor="@color/black"
-            android:layout_below="@id/rua"/>
+            android:layout_below="@id/rua"
+            android:layout_toRightOf="@id/tituloNumero"/>
+        <TextView
+            android:id="@+id/tituloVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloNumero"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/volume"
@@ -54,7 +112,19 @@
             android:layout_height="wrap_content"
             android:text="Volume"
             android:textColor="@color/black"
-            android:layout_below="@id/numero"/>
+            android:layout_below="@id/numero"
+            android:layout_toRightOf="@id/tituloVolume"/>
+
+        <TextView
+            android:id="@+id/tituloAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloVolume"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/altura"
@@ -62,7 +132,20 @@
             android:layout_height="wrap_content"
             android:text="Altura"
             android:textColor="@color/black"
-            android:layout_below="@id/volume"/>
+            android:layout_below="@id/volume"
+            android:layout_toRightOf="@id/tituloAltura"/>
+
+        <TextView
+            android:id="@+id/tituloLargura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Largura: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloAltura"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
+
 
         <TextView
             android:id="@+id/largura"
@@ -70,7 +153,19 @@
             android:layout_height="wrap_content"
             android:text="Largura"
             android:textColor="@color/black"
-            android:layout_below="@id/altura"/>
+            android:layout_below="@id/altura"
+            android:layout_toRightOf="@id/tituloLargura"/>
+
+        <TextView
+            android:id="@+id/tituloAngulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ângulo: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloLargura"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/angulo"
@@ -78,7 +173,19 @@
             android:layout_height="wrap_content"
             android:text="Angulo"
             android:textColor="@color/black"
-            android:layout_below="@id/largura"/>
+            android:layout_below="@id/largura"
+            android:layout_toRightOf="@id/tituloAngulo"/>
+
+        <TextView
+            android:id="@+id/tituloCEP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEP: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/tituloAngulo"
+            android:layout_alignStart="@id/tituloNomeProprietario"
+            android:layout_alignLeft="@id/tituloNomeProprietario"/>
 
         <TextView
             android:id="@+id/cep"
@@ -86,7 +193,8 @@
             android:layout_height="wrap_content"
             android:text="Cep"
             android:textColor="@color/black"
-            android:layout_below="@id/angulo"/>
+            android:layout_below="@id/angulo"
+            android:layout_toRightOf="@id/tituloCEP"/>
 
 
     </RelativeLayout>

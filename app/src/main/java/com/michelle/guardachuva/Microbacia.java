@@ -15,6 +15,9 @@ public class Microbacia {
         this.numero = numero;
     }
 
+    public Microbacia() {
+    }
+
     public String getNomeProprietario() {
         return nomeProprietario;
     }
