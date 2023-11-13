@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azulroial">#144BC8</color>
+    <color name="azulclaro">#46c8c8</color>
+    <color name="azulclaro2">#00b1ff</color>
+    <color name="verde">#00be6e</color>
+    <color name="cinza">#D9D9D9</color>
+    <color name="cinzaclaro">#F5F5F5</color>
+    <color name="cinzaescuro">#606268</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="_bg__registration_ek2_color">#FFFFFF</color>
+    <color name="projeto_color">#000000</color>
+    <color name="rectangle_9_color">#D3DCEE</color>
+    <color name="nome_color">#606268</color>
+    <color name="rectangle_11_color">#144BC8</color>
+    <color name="vermelho">#FF0000</color>
+</resources>

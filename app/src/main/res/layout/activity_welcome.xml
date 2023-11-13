@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:gravity="center"
+        tools:context=".Welcome">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/guardachuva" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROJETO"
+        android:textColor="@color/black"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guarda-Chuva"
+            android:textColor="@color/black"
+            android:fontFamily="@font/chewy"
+            android:gravity="center"
+            android:textSize="48dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btAcessar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/azulroial"
+            android:text="Acessar"
+            android:textColor="@color/white"></Button>
+
+
+</LinearLayout>
+</LinearLayout>

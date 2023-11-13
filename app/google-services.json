@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814114952280",
+    "project_id": "guardachuva-f0526",
+    "storage_bucket": "guardachuva-f0526.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814114952280:android:b2aaa57a9c00a61829a62d",
+        "android_client_info": {
+          "package_name": "com.michelle.guardachuva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3je7Y6XsWyRZOlRRufM3JuogS0iev2Lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10sp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/cinza">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <TextView
+            android:id="@+id/nomeProprietario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proprietário"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF"
+            android:textColor="@color/black"
+            android:layout_below="@id/nomeProprietario" />
+
+        <TextView
+            android:id="@+id/rua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rua"
+            android:textColor="@color/black"
+            android:layout_below="@id/cpf"/>
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número"
+            android:textColor="@color/black"
+            android:layout_below="@id/rua"/>
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            android:textColor="@color/black"
+            android:layout_below="@id/numero"/>
+
+        <TextView
+            android:id="@+id/altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altura"
+            android:textColor="@color/black"
+            android:layout_below="@id/volume"/>
+
+        <TextView
+            android:id="@+id/largura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Largura"
+            android:textColor="@color/black"
+            android:layout_below="@id/altura"/>
+
+        <TextView
+            android:id="@+id/angulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Angulo"
+            android:textColor="@color/black"
+            android:layout_below="@id/largura"/>
+
+        <TextView
+            android:id="@+id/cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cep"
+            android:textColor="@color/black"
+            android:layout_below="@id/angulo"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

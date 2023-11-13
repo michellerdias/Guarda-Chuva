@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical"
+    tools:context=".NovaMicrobacia">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/titulo"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nova Microbacia"
+            android:textColor="@color/black"
+            android:fontFamily="@font/chewy"
+            android:textSize="48sp"
+            android:gravity="center"></TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                        <EditText
+                        android:id="@+id/editNomeProprietario"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rectangle_9_shape"
+                        android:gravity="center"
+                        android:hint="Nome do Proprietário"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textColorHint="@color/cinzaescuro" />
+
+                        <EditText
+                            android:id="@+id/editCpf"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="CPF do Proprietário"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+                        <EditText
+                            android:id="@+id/editCep"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="CEP"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+                        <EditText
+                            android:id="@+id/editRua"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="Rua"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+                        <EditText
+                            android:id="@+id/editNumero"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="Número"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+
+                        <Button
+                            android:id="@+id/btLocalizacao"
+                            android:layout_width="330dp"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:text="Obter Localização"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/azulroial"
+                            ></Button>
+                        <EditText
+                            android:id="@+id/editLatitude"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="Latitude"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+                        <EditText
+                            android:id="@+id/editLongitude"
+                            android:layout_width="320dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/rectangle_9_shape"
+                            android:gravity="center"
+                            android:hint="Longitude"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:layout_marginTop="7dp"
+                            android:textColorHint="@color/cinzaescuro" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/telhado"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:columnCount="3">
+
+                                <EditText
+                                    android:id="@+id/editAltura"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_column="0"
+                                    android:layout_margin="7dp"
+                                    android:background="@color/cinza"
+                                    android:elevation="7dp"
+                                    android:gravity="center"
+                                    android:hint="Altura (m)"
+                                    android:inputType="number"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/editAngulo"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_column="1"
+                                    android:background="@color/cinza"
+                                    android:layout_margin="7dp"
+                                    android:elevation="7dp"
+                                    android:gravity="center"
+                                    android:hint="Ângulo (º)"
+                                    android:inputType="number"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/editLargura"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_column="2"
+                                    android:background="@color/cinza"
+                                    android:elevation="7dp"
+                                    android:gravity="center"
+                                    android:hint="Largura (m)"
+                                    android:inputType="number"
+                                    android:layout_margin="7dp" />
+                        </GridLayout>
+
+                        <Button
+                            android:id="@+id/btCalcular"
+                            android:layout_width="330dp"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:text="Calcular"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/azulroial"
+                            ></Button>
+
+                        <TextView
+                            android:id="@+id/volumeMicrobacia"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:background="@color/azulclaro"
+                            android:elevation="7dp"
+                            android:gravity="center"
+                            android:hint="Volume da Microbacia (m³) "
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Button
+                            android:id="@+id/btSalvar"
+                            android:layout_width="330dp"
+                            android:layout_height="60dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:text="Salvar"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/azulroial"
+                            ></Button>
+
+                </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/estacio"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/estacio_1"></ImageView>
+
+</LinearLayout>

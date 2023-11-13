@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <!-- Parte superior fixa -->
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/michelleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Michelle Dias"
+        android:textColor="@color/black"
+        android:fontFamily="@font/chewy"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_below="@id/titleImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:layout_below="@id/michelleText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/michellecolagem" />
+
+    <!-- Tela Android Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CardView com ScrollView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/apresentacaoMichelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/cinzaclaro">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sou a Michelle, apaixonada pela tecnologia e eterna estudante. Formada em Engenharia Metalúrgica pela Universidade Federal de Minas Gerais e especialista em Engenharia de Software e Desenvolvimento Orientado a Objetos com Java pela Estácio. Atualmente curso minha segunda graduação em Sistemas de Informação com foco em me tornar uma desenvolvedora Back-End."></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Meu propósito é usar a inovação para resolver problemas e facilitar a vida das pessoas, descomplicando o uso da tecnologia a fim de promover o crescimento dos negócios."></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Dois CardViews pequenos -->
+            <LinearLayout
+                android:id="@+id/cardContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/github"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/cinza">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/github"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Github"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/linkedin"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardElevation="7dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/cinza">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/linkedin"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Linkedin"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Imagem estacio_1 -->
+            <ImageView
+                android:id="@+id/estacio"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/estacio_1"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
